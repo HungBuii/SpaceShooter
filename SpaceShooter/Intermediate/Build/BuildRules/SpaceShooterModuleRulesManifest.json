@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"D:\\SpaceShooter\\SpaceShooter\\Source\\SpaceShooter\\SpaceShooter.Build.cs",
-		"D:\\SpaceShooter\\SpaceShooter\\Source\\SpaceShooter.Target.cs",
-		"D:\\SpaceShooter\\SpaceShooter\\Source\\SpaceShooterEditor.Target.cs"
-	],
-	"EngineVersion": "5.6.1"
-}
