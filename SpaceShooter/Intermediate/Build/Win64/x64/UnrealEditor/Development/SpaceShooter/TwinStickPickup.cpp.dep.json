@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\spaceshooter\\spaceshooter\\source\\spaceshooter\\variant_twinstick\\gameplay\\twinstickpickup.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\x64\\spaceshootereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\spaceshooter\\definitions.spaceshooter.h",
+            "d:\\spaceshooter\\spaceshooter\\source\\spaceshooter\\variant_twinstick\\gameplay\\twinstickpickup.h",
+            "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\unrealeditor\\inc\\spaceshooter\\uht\\twinstickpickup.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h",
+            "d:\\spaceshooter\\spaceshooter\\source\\spaceshooter\\variant_twinstick\\twinstickcharacter.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\unrealeditor\\inc\\spaceshooter\\uht\\twinstickcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

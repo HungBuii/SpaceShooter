@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\unrealeditor\\inc\\spaceshooter\\uht\\spaceshooterplayercontroller.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\x64\\spaceshootereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\spaceshooter\\definitions.spaceshooter.h",
+            "d:\\spaceshooter\\spaceshooter\\source\\spaceshooter\\spaceshooterplayercontroller.h",
+            "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\unrealeditor\\inc\\spaceshooter\\uht\\spaceshooterplayercontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

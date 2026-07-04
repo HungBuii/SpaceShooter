@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\SpaceShooter.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SpaceShooter.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SpaceShooterEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\SpaceShooter">
+      <UniqueIdentifier>{A9B84ADF-A801-331C-9BBB-48183EC1CBC1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SpaceShooter\SpaceShooter.Build.cs">
+      <Filter>Source\SpaceShooter</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\SpaceShooter\SpaceShooter.cpp">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\SpaceShooter.h">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\SpaceShooterCharacter.cpp">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\SpaceShooterCharacter.h">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.cpp">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.h">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\SpaceShooterPlayerController.cpp">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\SpaceShooterPlayerController.h">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceShooter\Variant_Strategy">
+      <UniqueIdentifier>{95A00D78-8A96-33EC-92D7-DF12A0F2B488}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_Strategy\StrategyGameMode.cpp">
+      <Filter>Source\SpaceShooter\Variant_Strategy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_Strategy\StrategyGameMode.h">
+      <Filter>Source\SpaceShooter\Variant_Strategy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_Strategy\StrategyPawn.cpp">
+      <Filter>Source\SpaceShooter\Variant_Strategy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_Strategy\StrategyPawn.h">
+      <Filter>Source\SpaceShooter\Variant_Strategy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_Strategy\StrategyPlayerController.cpp">
+      <Filter>Source\SpaceShooter\Variant_Strategy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_Strategy\StrategyPlayerController.h">
+      <Filter>Source\SpaceShooter\Variant_Strategy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_Strategy\StrategyUnit.cpp">
+      <Filter>Source\SpaceShooter\Variant_Strategy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_Strategy\StrategyUnit.h">
+      <Filter>Source\SpaceShooter\Variant_Strategy</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceShooter\Variant_Strategy\UI">
+      <UniqueIdentifier>{881DA045-F202-3C85-A3F4-BB904045C40F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_Strategy\UI\StrategyHUD.cpp">
+      <Filter>Source\SpaceShooter\Variant_Strategy\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_Strategy\UI\StrategyHUD.h">
+      <Filter>Source\SpaceShooter\Variant_Strategy\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_Strategy\UI\StrategyUI.cpp">
+      <Filter>Source\SpaceShooter\Variant_Strategy\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_Strategy\UI\StrategyUI.h">
+      <Filter>Source\SpaceShooter\Variant_Strategy\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceShooter\Variant_TwinStick">
+      <UniqueIdentifier>{B45A1AB4-634C-32B9-806C-3DAC297B10A0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\TwinStickCharacter.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\TwinStickCharacter.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\TwinStickGameMode.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\TwinStickGameMode.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\TwinStickPlayerController.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\TwinStickPlayerController.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceShooter\Variant_TwinStick\AI">
+      <UniqueIdentifier>{26EEC272-CD14-35C3-A840-C7274F8A2C89}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickAIController.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickAIController.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickNPC.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickNPC.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickNPCDestruction.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickNPCDestruction.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickSpawner.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickSpawner.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickStateTreeUtility.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\AI\TwinStickStateTreeUtility.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceShooter\Variant_TwinStick\Gameplay">
+      <UniqueIdentifier>{A663875C-2EB9-3690-9403-D590DA9D0EE4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\Gameplay\TwinStickAoEAttack.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\Gameplay\TwinStickAoEAttack.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\Gameplay\TwinStickPickup.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\Gameplay\TwinStickPickup.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\Gameplay\TwinStickProjectile.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\Gameplay\TwinStickProjectile.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceShooter\Variant_TwinStick\UI">
+      <UniqueIdentifier>{7E3D6AD7-B03E-3436-8D89-580EE67E699C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceShooter\Variant_TwinStick\UI\TwinStickUI.cpp">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\Variant_TwinStick\UI\TwinStickUI.h">
+      <Filter>Source\SpaceShooter\Variant_TwinStick\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

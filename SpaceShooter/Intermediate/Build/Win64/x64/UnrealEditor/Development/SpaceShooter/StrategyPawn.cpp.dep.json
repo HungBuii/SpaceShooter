@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\spaceshooter\\spaceshooter\\source\\spaceshooter\\variant_strategy\\strategypawn.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\x64\\spaceshootereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\spaceshooter\\definitions.spaceshooter.h",
+            "d:\\spaceshooter\\spaceshooter\\source\\spaceshooter\\variant_strategy\\strategypawn.h",
+            "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\unrealeditor\\inc\\spaceshooter\\uht\\strategypawn.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\camera\\cameracomponent.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\cameracomponent.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\floatingpawnmovement.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\pawnmovementcomponent.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\navmovementcomponent.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\navmovementinterface.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\navmovementinterface.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\ai\\navigation\\pathfollowingagentinterface.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\pathfollowingagentinterface.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\movementcomponent.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\movementcomponent.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\navmovementcomponent.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\pawnmovementcomponent.generated.h",
+            "d:\\unreal engine version\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\floatingpawnmovement.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

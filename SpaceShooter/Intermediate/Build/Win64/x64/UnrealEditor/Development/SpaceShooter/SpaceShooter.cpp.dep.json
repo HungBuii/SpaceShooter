@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\spaceshooter\\spaceshooter\\source\\spaceshooter\\spaceshooter.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\x64\\spaceshootereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\spaceshooter\\spaceshooter\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\spaceshooter\\definitions.spaceshooter.h",
+            "d:\\spaceshooter\\spaceshooter\\source\\spaceshooter\\spaceshooter.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
