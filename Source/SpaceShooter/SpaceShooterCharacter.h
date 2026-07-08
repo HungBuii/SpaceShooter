@@ -6,6 +6,10 @@
 #include "GameFramework/Character.h"
 #include "SpaceShooterCharacter.generated.h"
 
+struct FInputActionValue;
+class UInputAction;
+class UCameraComponent;
+class USpringArmComponent;
 /**
  *  A controllable top-down perspective character
  */
@@ -14,32 +18,82 @@ class ASpaceShooterCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-private:
-
-	/** Top down camera */
+/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
-	class UCameraComponent* TopDownCameraComponent;
+	USpringArmComponent* CameraBoom;
 
-	/** Camera boom positioning the camera above the character */
+	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* CameraBoom;
+	UCameraComponent* FollowCamera;
+	
+protected:
+
+	/** Jump Input Action */
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* JumpAction;
+
+	/** Move Input Action */
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* MoveAction;
+
+	/** Look Input Action */
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* LookAction;
+
+	/** Mouse Look Input Action */
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* MouseLookAction;
+	
+	/** Shoot Input Action */
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* ShootAction;
 
 public:
 
 	/** Constructor */
-	ASpaceShooterCharacter();
+	ASpaceShooterCharacter();	
 
-	/** Initialization */
+protected:
+
+	/** Initialize input action bindings */
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+protected:
+	
+	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	
+	/** Called for movement input */
+	void Move(const FInputActionValue& Value);
 
-	/** Update */
-	virtual void Tick(float DeltaSeconds) override;
+	/** Called for looking input */
+	void Look(const FInputActionValue& Value);
 
-	/** Returns the camera component **/
-	FORCEINLINE class UCameraComponent* GetTopDownCameraComponent() const { return TopDownCameraComponent; }
+public:
+	
+	/** Handles move inputs from either controls or UI interfaces */
+	UFUNCTION(BlueprintCallable, Category="Input")
+	virtual void DoMove(float Right, float Forward);
 
-	/** Returns the Camera Boom component **/
+	/** Handles look inputs from either controls or UI interfaces */
+	UFUNCTION(BlueprintCallable, Category="Input")
+	virtual void DoLook(float Yaw, float Pitch);
+
+	/** Handles jump pressed inputs from either controls or UI interfaces */
+	UFUNCTION(BlueprintCallable, Category="Input")
+	virtual void DoJumpStart();
+
+	/** Handles jump pressed inputs from either controls or UI interfaces */
+	UFUNCTION(BlueprintCallable, Category="Input")
+	virtual void DoJumpEnd();
+
+public:
+
+	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 
+	/** Returns FollowCamera subobject **/
+	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+	
 };
 

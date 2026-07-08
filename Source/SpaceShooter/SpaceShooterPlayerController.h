@@ -24,54 +24,26 @@ class ASpaceShooterPlayerController : public APlayerController
 
 protected:
 
-	/** Time Threshold to know if it was a short press */
-	UPROPERTY(EditAnywhere, Category="Input")
-	float ShortPressThreshold;
+	/** Input Mapping Contexts */
+	UPROPERTY(EditAnywhere, Category ="Input|Input Mappings")
+	TArray<UInputMappingContext*> DefaultMappingContexts;
 
-	/** FX Class that we will spawn when clicking */
-	UPROPERTY(EditAnywhere, Category="Input")
-	UNiagaraSystem* FXCursor;
+	/** Input Mapping Contexts */
+	UPROPERTY(EditAnywhere, Category="Input|Input Mappings")
+	TArray<UInputMappingContext*> MobileExcludedMappingContexts;
 
-	/** MappingContext */
-	UPROPERTY(EditAnywhere, Category="Input")
-	UInputMappingContext* DefaultMappingContext;
-	
-	/** Jump Input Action */
-	UPROPERTY(EditAnywhere, Category="Input")
-	UInputAction* SetDestinationClickAction;
+	/** Mobile controls widget to spawn */
+	UPROPERTY(EditAnywhere, Category="Input|Touch Controls")
+	TSubclassOf<UUserWidget> MobileControlsWidgetClass;
 
-	/** Jump Input Action */
-	UPROPERTY(EditAnywhere, Category="Input")
-	UInputAction* SetDestinationTouchAction;
+	/** Pointer to the mobile controls widget */
+	TObjectPtr<UUserWidget> MobileControlsWidget;
 
-	/** True if the controlled character should navigate to the mouse cursor. */
-	uint32 bMoveToMouseCursor : 1;
+	/** Gameplay initialization */
+	virtual void BeginPlay() override;
 
-	/** Set to true if we're using touch input */
-	uint32 bIsTouch : 1;
-
-	/** Saved location of the character movement destination */
-	FVector CachedDestination;
-
-	/** Time that the click input has been pressed */
-	float FollowTime = 0.0f;
-
-public:
-
-	/** Constructor */
-	ASpaceShooterPlayerController();
-
-protected:
-
-	/** Initialize input bindings */
+	/** Input mapping context setup */
 	virtual void SetupInputComponent() override;
-	
-	/** Input handlers */
-	void OnInputStarted();
-	void OnSetDestinationTriggered();
-	void OnSetDestinationReleased();
-	void OnTouchTriggered();
-	void OnTouchReleased();
 
 };
 
