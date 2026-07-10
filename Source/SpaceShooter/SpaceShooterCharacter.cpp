@@ -24,7 +24,7 @@ ASpaceShooterCharacter::ASpaceShooterCharacter()
 	bUseControllerRotationRoll = false;
 
 	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = true;
+	GetCharacterMovement()->bOrientRotationToMovement = false;
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 500.0f, 0.0f);
 
 	// Note: For faster iteration times these variables, and many more, can be tweaked in the Character Blueprint
