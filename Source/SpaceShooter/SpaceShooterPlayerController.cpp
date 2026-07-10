@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "InputActionValue.h"
 #include "EnhancedInputSubsystems.h"
+#include "HUDWidget.h"
 #include "Engine/LocalPlayer.h"
 #include "SpaceShooter.h"
 #include "Blueprint/UserWidget.h"
@@ -32,6 +33,14 @@ void ASpaceShooterPlayerController::BeginPlay()
 
 		}
 	}
+	
+	HUDWidget = CreateWidget<UHUDWidget>(this, HUDWidgetClass);
+		
+	if (HUDWidget)
+	{
+		HUDWidget->AddToViewport();
+	}
+	
 }
 
 void ASpaceShooterPlayerController::SetupInputComponent()

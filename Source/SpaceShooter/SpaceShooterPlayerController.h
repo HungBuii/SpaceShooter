@@ -7,6 +7,7 @@
 #include "GameFramework/PlayerController.h"
 #include "SpaceShooterPlayerController.generated.h"
 
+class UHUDWidget;
 class UNiagaraSystem;
 class UInputMappingContext;
 class UInputAction;
@@ -44,7 +45,14 @@ protected:
 
 	/** Input mapping context setup */
 	virtual void SetupInputComponent() override;
-
+	
+public:
+	
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<UHUDWidget> HUDWidgetClass;
+	
+	UPROPERTY(VisibleAnywhere)
+	UHUDWidget* HUDWidget;
 };
 
 
