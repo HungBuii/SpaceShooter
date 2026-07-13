@@ -3,6 +3,7 @@
 #include "SpaceShooterCharacter.h"
 
 #include "EnhancedInputComponent.h"
+#include "Gun.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Camera/CameraComponent.h"
 #include "Components/DecalComponent.h"
@@ -72,6 +73,15 @@ void ASpaceShooterCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 void ASpaceShooterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	
+	GetMesh()->HideBoneByName("weapon_r", PBO_None);
+	
+	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
+	if (Gun)
+	{
+		Gun->SetOwner(this);
+		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+	}
 }
 
 void ASpaceShooterCharacter::Move(const FInputActionValue& Value)

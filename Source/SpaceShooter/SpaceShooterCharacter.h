@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "SpaceShooterCharacter.generated.h"
 
+class AGun;
 struct FInputActionValue;
 class UInputAction;
 class UCameraComponent;
@@ -95,5 +96,9 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 	
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AGun> GunClass;
+	
+	TObjectPtr<AGun> Gun;
 };
 
