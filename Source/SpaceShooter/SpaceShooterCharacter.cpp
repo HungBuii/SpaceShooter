@@ -67,6 +67,9 @@ void ASpaceShooterCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ASpaceShooterCharacter::Look);
+		
+		// Shoot
+		EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Started, this, &ASpaceShooterCharacter::Shoot);
 	}
 }
 
@@ -102,6 +105,11 @@ void ASpaceShooterCharacter::Look(const FInputActionValue& Value)
 
 	// route the input
 	DoLook(LookAxisVector.X, LookAxisVector.Y);
+}
+
+void ASpaceShooterCharacter::Shoot()
+{
+	UE_LOG(LogTemp, Display, TEXT("Shoot"));
 }
 
 void ASpaceShooterCharacter::DoMove(float Right, float Forward)

@@ -72,6 +72,9 @@ protected:
 
 public:
 	
+	/** Called for shoot input */
+	void Shoot();
+	
 	/** Handles move inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category="Input")
 	virtual void DoMove(float Right, float Forward);
