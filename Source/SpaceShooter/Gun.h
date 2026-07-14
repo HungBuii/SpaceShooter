@@ -39,6 +39,12 @@ public:
 	UNiagaraSystem* ImpactParticleSystem;
 	
 	UPROPERTY(EditAnywhere)
+	USoundBase* ShootSound;
+	
+	UPROPERTY(EditAnywhere)
+	USoundBase* ImpactSound;
+	
+	UPROPERTY(EditAnywhere)
 	float MaxRange = 10000.f;
 	
 	TObjectPtr<AController> OwnerController;
