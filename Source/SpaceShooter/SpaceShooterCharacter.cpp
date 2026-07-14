@@ -84,6 +84,7 @@ void ASpaceShooterCharacter::BeginPlay()
 	{
 		Gun->SetOwner(this);
 		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+		Gun->OwnerController = GetController();
 	}
 }
 
@@ -109,7 +110,8 @@ void ASpaceShooterCharacter::Look(const FInputActionValue& Value)
 
 void ASpaceShooterCharacter::Shoot()
 {
-	UE_LOG(LogTemp, Display, TEXT("Shoot"));
+	if (Gun)
+		Gun->PullTrigger();
 }
 
 void ASpaceShooterCharacter::DoMove(float Right, float Forward)
