@@ -20,6 +20,9 @@ public:
 
 	/** Constructor */
 	ASpaceShooterGameMode();
+	
+protected:
+	virtual void BeginPlay() override;
 };
 
 
