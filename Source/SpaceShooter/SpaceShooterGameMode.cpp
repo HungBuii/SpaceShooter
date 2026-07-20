@@ -27,7 +27,6 @@ void ASpaceShooterGameMode::BeginPlay()
 		if (EnemyAI)
 		{
 			EnemyAI->StartBehaviorTree(Player);
-			UE_LOG(LogTemp, Display, TEXT("%s starting behavior tree"), *EnemyAI->GetActorNameOrLabel());
 		}
 	}
 }

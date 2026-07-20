@@ -8,7 +8,7 @@
 
 UBTService_ShooterLocation::UBTService_ShooterLocation()
 {
-	NodeName = TEXT("Get Shooter Location");
+	NodeName = TEXT("Save Shooter's Location");
 }
 
 void UBTService_ShooterLocation::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
