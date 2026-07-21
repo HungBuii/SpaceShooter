@@ -77,6 +77,10 @@ void ASpaceShooterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	Health = MaxHealth;
+	
+	OnTakeAnyDamage.AddDynamic(this, &ASpaceShooterCharacter::OnDamageTaken);
+	
 	GetMesh()->HideBoneByName("weapon_r", PBO_None);
 	
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
@@ -154,6 +158,15 @@ void ASpaceShooterCharacter::DoJumpEnd()
 {
 	// signal the character to stop jumping
 	StopJumping();
+}
+
+void ASpaceShooterCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, const class UDamageType* DamageType,
+	class AController* InstigatedBy, AActor* DamageCauser)
+{
+	UE_LOG(LogTemp, Display, TEXT("Damage taken: %f"), Damage);
+	UE_LOG(LogTemp, Display, TEXT("Damaged Actor: %s"), *DamagedActor->GetActorNameOrLabel());
+
+	Health -= Damage;
 }
 
 

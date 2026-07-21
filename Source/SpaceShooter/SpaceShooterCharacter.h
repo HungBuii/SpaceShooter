@@ -103,5 +103,14 @@ public:
 	TSubclassOf<AGun> GunClass;
 	
 	TObjectPtr<AGun> Gun;
+	
+	UPROPERTY(EditAnywhere)
+	float MaxHealth = 100.0f;
+
+	float Health;
+	
+	UFUNCTION()
+	void OnDamageTaken(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, 
+		class AController* InstigatedBy, AActor* DamageCauser);
 };
 

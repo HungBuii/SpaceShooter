@@ -65,6 +65,13 @@ void AGun::PullTrigger()
 			
 			UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, HitResult.ImpactPoint);
 		}
+		
+		AActor* HitActor = HitResult.GetActor();
+		if (HitActor)
+		{
+			UGameplayStatics::ApplyDamage(HitActor, BulletDamage, 
+				OwnerController, this, UDamageType::StaticClass());
+		}
 
 	}
 
