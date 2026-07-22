@@ -163,10 +163,24 @@ void ASpaceShooterCharacter::DoJumpEnd()
 void ASpaceShooterCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, const class UDamageType* DamageType,
 	class AController* InstigatedBy, AActor* DamageCauser)
 {
-	UE_LOG(LogTemp, Display, TEXT("Damage taken: %f"), Damage);
-	UE_LOG(LogTemp, Display, TEXT("Damaged Actor: %s"), *DamagedActor->GetActorNameOrLabel());
+	if (IsAlive)
+	{
+		UE_LOG(LogTemp, Display, TEXT("Damage taken: %f"), Damage);
+		UE_LOG(LogTemp, Display, TEXT("Damaged Actor: %s"), *DamagedActor->GetActorNameOrLabel());
 
-	Health -= Damage;
+		Health -= Damage;
+		
+		if (Health <= 0.0f)
+		{
+			IsAlive = false;
+			Health = 0.0f;
+			GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			DetachFromControllerPendingDestroy();
+
+			UE_LOG(LogTemp, Display, TEXT("Character died: %s"), *GetActorNameOrLabel());
+		}
+	}
+	
 }
 
 
