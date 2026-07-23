@@ -4,6 +4,8 @@
 
 #include "EnhancedInputComponent.h"
 #include "Gun.h"
+#include "HUDWidget.h"
+#include "SpaceShooterPlayerController.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Camera/CameraComponent.h"
 #include "Components/DecalComponent.h"
@@ -78,6 +80,8 @@ void ASpaceShooterCharacter::BeginPlay()
 	Super::BeginPlay();
 	
 	Health = MaxHealth;
+	
+	UpdateHUD();
 	
 	OnTakeAnyDamage.AddDynamic(this, &ASpaceShooterCharacter::OnDamageTaken);
 	
@@ -169,6 +173,7 @@ void ASpaceShooterCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, c
 		UE_LOG(LogTemp, Display, TEXT("Damaged Actor: %s"), *DamagedActor->GetActorNameOrLabel());
 
 		Health -= Damage;
+		UpdateHUD();
 		
 		if (Health <= 0.0f)
 		{
@@ -181,6 +186,21 @@ void ASpaceShooterCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, c
 		}
 	}
 	
+}
+
+void ASpaceShooterCharacter::UpdateHUD()
+{
+	ASpaceShooterPlayerController* PlayerController = Cast<ASpaceShooterPlayerController>(GetController());
+	if (PlayerController)
+	{
+		float NewPercent = Health / MaxHealth;
+		if (NewPercent < 0.0f)
+		{
+			NewPercent = 0.0f;
+		}
+
+		PlayerController->HUDWidget->SetHealthBarPercent(NewPercent);
+	}
 }
 
 
