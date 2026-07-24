@@ -31,11 +31,11 @@ void AAIEnemyController::StartBehaviorTree(ASpaceShooterCharacter* Player)
 	
 		RunBehaviorTree(EnemyAIBehaviorTree);
 		
-		// UBlackboardComponent* MyBlackboard = GetBlackboardComponent();
-		// if (MyBlackboard && PlayerCharacter && MyCharacter)
-		// {
-		// 	MyBlackboard->SetValueAsVector("StartLocation", MyCharacter->GetActorLocation());
-		// }
+		UBlackboardComponent* MyBlackboard = GetBlackboardComponent();
+		if (MyBlackboard && PlayerCharacter && MyCharacter)
+		{
+			MyBlackboard->SetValueAsVector("StartLocation", MyCharacter->GetActorLocation());
+		}
 	}
 	
 }
